@@ -9,4 +9,14 @@
 
 @implementation UIViewController (Creation)
 
++ (instancetype)createInstance {
+    
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main"
+                                                 bundle:nil];
+    
+    NSString *className = NSStringFromClass([self class]);
+    
+    return [sb instantiateViewControllerWithIdentifier:className];
+}
+
 @end

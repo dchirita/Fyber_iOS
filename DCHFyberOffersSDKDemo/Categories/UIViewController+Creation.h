@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIViewController (Creation)
 
++ (instancetype)createInstance;
+
 @end
 
 NS_ASSUME_NONNULL_END

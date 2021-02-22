@@ -3,32 +3,154 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		650B71C125E113C40071CECD /* Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 650B71C225E113C40071CECD /* Build configuration list for PBXAggregateTarget "Framework" */;
+			buildPhases = (
+				650B71CA25E1148A0071CECD /* ShellScript */,
+			);
+			dependencies = (
+				650B71C925E114280071CECD /* PBXTargetDependency */,
+			);
+			name = Framework;
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		21B070F1B88129ECDD9E37AD /* Pods_DCHFyberOffersSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22384A465917F3D63D7A81F0 /* Pods_DCHFyberOffersSDKDemo.framework */; };
 		650B70DA25E100D60071CECD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 650B70D925E100D60071CECD /* AppDelegate.m */; };
-		650B70DD25E100D60071CECD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 650B70DC25E100D60071CECD /* SceneDelegate.m */; };
-		650B70E025E100D60071CECD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650B70DF25E100D60071CECD /* ViewController.m */; };
 		650B70E325E100D60071CECD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 650B70E125E100D60071CECD /* Main.storyboard */; };
 		650B70E525E100D60071CECD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 650B70E425E100D60071CECD /* Assets.xcassets */; };
 		650B70E825E100D60071CECD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 650B70E625E100D60071CECD /* LaunchScreen.storyboard */; };
 		650B70EB25E100D60071CECD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 650B70EA25E100D60071CECD /* main.m */; };
+		650B710025E101F80071CECD /* DCHFyberOffersSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 650B70F725E101F80071CECD /* DCHFyberOffersSDK.framework */; };
+		650B710725E101F80071CECD /* DCHFyberOffersSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 650B710625E101F80071CECD /* DCHFyberOffersSDKTests.m */; };
+		650B710925E101F80071CECD /* DCHFyberOffersSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 650B70F925E101F80071CECD /* DCHFyberOffersSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		650B710C25E101F80071CECD /* DCHFyberOffersSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 650B70F725E101F80071CECD /* DCHFyberOffersSDK.framework */; };
+		650B710D25E101F80071CECD /* DCHFyberOffersSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 650B70F725E101F80071CECD /* DCHFyberOffersSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		650B713125E1064B0071CECD /* FBRFyber.h in Headers */ = {isa = PBXBuildFile; fileRef = 650B712225E1064B0071CECD /* FBRFyber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		650B713225E1064B0071CECD /* FBROfferItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 650B712325E1064B0071CECD /* FBROfferItem.m */; };
+		650B713325E1064B0071CECD /* FBROffersFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 650B712425E1064B0071CECD /* FBROffersFactory.h */; };
+		650B713425E1064B0071CECD /* NSString+SHA.h in Headers */ = {isa = PBXBuildFile; fileRef = 650B712525E1064B0071CECD /* NSString+SHA.h */; };
+		650B713625E1064B0071CECD /* FBRLinkGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 650B712725E1064B0071CECD /* FBRLinkGenerator.m */; };
+		650B713825E1064B0071CECD /* FBROffersRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 650B712925E1064B0071CECD /* FBROffersRequest.h */; };
+		650B713925E1064B0071CECD /* FBROfferItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 650B712A25E1064B0071CECD /* FBROfferItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		650B713A25E1064B0071CECD /* FBRFyber.m in Sources */ = {isa = PBXBuildFile; fileRef = 650B712B25E1064B0071CECD /* FBRFyber.m */; };
+		650B713B25E1064B0071CECD /* NSString+SHA.m in Sources */ = {isa = PBXBuildFile; fileRef = 650B712C25E1064B0071CECD /* NSString+SHA.m */; };
+		650B713C25E1064B0071CECD /* FBROffersFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 650B712D25E1064B0071CECD /* FBROffersFactory.m */; };
+		650B713D25E1064B0071CECD /* FBRLinkGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 650B712E25E1064B0071CECD /* FBRLinkGenerator.h */; };
+		650B713E25E1064B0071CECD /* FBRGenericBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 650B712F25E1064B0071CECD /* FBRGenericBlocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		650B713F25E1064B0071CECD /* FBROffersRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 650B713025E1064B0071CECD /* FBROffersRequest.m */; };
+		650B715925E10A5B0071CECD /* FBRResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650B715525E10A5B0071CECD /* FBRResultsViewController.m */; };
+		650B715A25E10A5B0071CECD /* FBRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650B715825E10A5B0071CECD /* FBRViewController.m */; };
+		650B716025E10A9B0071CECD /* FBROfferTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 650B715F25E10A9B0071CECD /* FBROfferTableViewCell.m */; };
+		6527499C25E24866005A2F1D /* DCHFyberOffersSDKFunctionalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6527499B25E24866005A2F1D /* DCHFyberOffersSDKFunctionalTests.m */; };
+		65A45E2625E1396700BD5228 /* FBRFyberParametersKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 65A45E2425E1396700BD5228 /* FBRFyberParametersKeys.h */; };
+		65A45E2725E1396700BD5228 /* FBRFyberParametersKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A45E2525E1396700BD5228 /* FBRFyberParametersKeys.m */; };
+		65A45E7F25E1409500BD5228 /* FBRParams.h in Headers */ = {isa = PBXBuildFile; fileRef = 65A45E7D25E1409500BD5228 /* FBRParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65A45E8025E1409500BD5228 /* FBRParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A45E7E25E1409500BD5228 /* FBRParams.m */; };
+		65A45EC225E145AA00BD5228 /* OfferType.h in Headers */ = {isa = PBXBuildFile; fileRef = 65A45EC025E145AA00BD5228 /* OfferType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65A45EDC25E1496100BD5228 /* MainFlowHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A45EDB25E1496100BD5228 /* MainFlowHandler.m */; };
+		65A45EEF25E14BA100BD5228 /* UIViewController+Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A45EEE25E14BA100BD5228 /* UIViewController+Creation.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		650B710125E101F80071CECD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 650B70CD25E100D50071CECD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 650B70F625E101F80071CECD;
+			remoteInfo = DCHFyberOffersSDK;
+		};
+		650B710325E101F80071CECD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 650B70CD25E100D50071CECD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 650B70D425E100D50071CECD;
+			remoteInfo = DCHFyberOffersSDKDemo;
+		};
+		650B710A25E101F80071CECD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 650B70CD25E100D50071CECD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 650B70F625E101F80071CECD;
+			remoteInfo = DCHFyberOffersSDK;
+		};
+		650B71C825E114280071CECD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 650B70CD25E100D50071CECD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 650B70F625E101F80071CECD;
+			remoteInfo = DCHFyberOffersSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		650B711125E101F80071CECD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				650B710D25E101F80071CECD /* DCHFyberOffersSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		22384A465917F3D63D7A81F0 /* Pods_DCHFyberOffersSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCHFyberOffersSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		650B70D525E100D60071CECD /* DCHFyberOffersSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCHFyberOffersSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		650B70D825E100D60071CECD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		650B70D925E100D60071CECD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		650B70DB25E100D60071CECD /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		650B70DC25E100D60071CECD /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		650B70DE25E100D60071CECD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		650B70DF25E100D60071CECD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		650B70E225E100D60071CECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		650B70E425E100D60071CECD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		650B70E725E100D60071CECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		650B70E925E100D60071CECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		650B70EA25E100D60071CECD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		650B70F725E101F80071CECD /* DCHFyberOffersSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCHFyberOffersSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		650B70F925E101F80071CECD /* DCHFyberOffersSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCHFyberOffersSDK.h; sourceTree = "<group>"; };
+		650B70FA25E101F80071CECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		650B70FF25E101F80071CECD /* DCHFyberOffersSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCHFyberOffersSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		650B710625E101F80071CECD /* DCHFyberOffersSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCHFyberOffersSDKTests.m; sourceTree = "<group>"; };
+		650B710825E101F80071CECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		650B712225E1064B0071CECD /* FBRFyber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRFyber.h; sourceTree = "<group>"; };
+		650B712325E1064B0071CECD /* FBROfferItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBROfferItem.m; sourceTree = "<group>"; };
+		650B712425E1064B0071CECD /* FBROffersFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBROffersFactory.h; sourceTree = "<group>"; };
+		650B712525E1064B0071CECD /* NSString+SHA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SHA.h"; sourceTree = "<group>"; };
+		650B712725E1064B0071CECD /* FBRLinkGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRLinkGenerator.m; sourceTree = "<group>"; };
+		650B712925E1064B0071CECD /* FBROffersRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBROffersRequest.h; sourceTree = "<group>"; };
+		650B712A25E1064B0071CECD /* FBROfferItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBROfferItem.h; sourceTree = "<group>"; };
+		650B712B25E1064B0071CECD /* FBRFyber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRFyber.m; sourceTree = "<group>"; };
+		650B712C25E1064B0071CECD /* NSString+SHA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SHA.m"; sourceTree = "<group>"; };
+		650B712D25E1064B0071CECD /* FBROffersFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBROffersFactory.m; sourceTree = "<group>"; };
+		650B712E25E1064B0071CECD /* FBRLinkGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRLinkGenerator.h; sourceTree = "<group>"; };
+		650B712F25E1064B0071CECD /* FBRGenericBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRGenericBlocks.h; sourceTree = "<group>"; };
+		650B713025E1064B0071CECD /* FBROffersRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBROffersRequest.m; sourceTree = "<group>"; };
+		650B715425E10A5B0071CECD /* FBRResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRResultsViewController.h; sourceTree = "<group>"; };
+		650B715525E10A5B0071CECD /* FBRResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRResultsViewController.m; sourceTree = "<group>"; };
+		650B715725E10A5B0071CECD /* FBRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRViewController.h; sourceTree = "<group>"; };
+		650B715825E10A5B0071CECD /* FBRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRViewController.m; sourceTree = "<group>"; };
+		650B715E25E10A9B0071CECD /* FBROfferTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBROfferTableViewCell.h; sourceTree = "<group>"; };
+		650B715F25E10A9B0071CECD /* FBROfferTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBROfferTableViewCell.m; sourceTree = "<group>"; };
+		6527499B25E24866005A2F1D /* DCHFyberOffersSDKFunctionalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCHFyberOffersSDKFunctionalTests.m; sourceTree = "<group>"; };
+		65A45E2425E1396700BD5228 /* FBRFyberParametersKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBRFyberParametersKeys.h; sourceTree = "<group>"; };
+		65A45E2525E1396700BD5228 /* FBRFyberParametersKeys.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBRFyberParametersKeys.m; sourceTree = "<group>"; };
+		65A45E7D25E1409500BD5228 /* FBRParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBRParams.h; sourceTree = "<group>"; };
+		65A45E7E25E1409500BD5228 /* FBRParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBRParams.m; sourceTree = "<group>"; };
+		65A45EC025E145AA00BD5228 /* OfferType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OfferType.h; sourceTree = "<group>"; };
+		65A45EDA25E1496100BD5228 /* MainFlowHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainFlowHandler.h; sourceTree = "<group>"; };
+		65A45EDB25E1496100BD5228 /* MainFlowHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainFlowHandler.m; sourceTree = "<group>"; };
+		65A45EED25E14BA100BD5228 /* UIViewController+Creation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Creation.h"; sourceTree = "<group>"; };
+		65A45EEE25E14BA100BD5228 /* UIViewController+Creation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Creation.m"; sourceTree = "<group>"; };
+		A420C52A870781F4C347ABBE /* Pods-DCHFyberOffersSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCHFyberOffersSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-DCHFyberOffersSDKDemo/Pods-DCHFyberOffersSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B1F811DC85F408012F56611D /* Pods-DCHFyberOffersSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCHFyberOffersSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-DCHFyberOffersSDKDemo/Pods-DCHFyberOffersSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +158,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				650B710C25E101F80071CECD /* DCHFyberOffersSDK.framework in Frameworks */,
+				21B070F1B88129ECDD9E37AD /* Pods_DCHFyberOffersSDKDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		650B70F425E101F80071CECD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		650B70FC25E101F80071CECD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				650B710025E101F80071CECD /* DCHFyberOffersSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55309955CED721B6078FBF63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1F811DC85F408012F56611D /* Pods-DCHFyberOffersSDKDemo.debug.xcconfig */,
+				A420C52A870781F4C347ABBE /* Pods-DCHFyberOffersSDKDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		650B70CC25E100D50071CECD = {
 			isa = PBXGroup;
 			children = (
 				650B70D725E100D60071CECD /* DCHFyberOffersSDKDemo */,
+				650B70F825E101F80071CECD /* DCHFyberOffersSDK */,
+				650B710525E101F80071CECD /* DCHFyberOffersSDKTests */,
 				650B70D625E100D60071CECD /* Products */,
+				55309955CED721B6078FBF63 /* Pods */,
+				8BABFB74FB5546423191FA8F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +206,8 @@
 			isa = PBXGroup;
 			children = (
 				650B70D525E100D60071CECD /* DCHFyberOffersSDKDemo.app */,
+				650B70F725E101F80071CECD /* DCHFyberOffersSDK.framework */,
+				650B70FF25E101F80071CECD /* DCHFyberOffersSDKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,12 +215,12 @@
 		650B70D725E100D60071CECD /* DCHFyberOffersSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
+				65A45EE025E14B7400BD5228 /* Categories */,
+				65A45ED925E1495400BD5228 /* FlowHandlers */,
+				650B715D25E10A9B0071CECD /* Views */,
+				650B715225E10A5B0071CECD /* ViewControllers */,
 				650B70D825E100D60071CECD /* AppDelegate.h */,
 				650B70D925E100D60071CECD /* AppDelegate.m */,
-				650B70DB25E100D60071CECD /* SceneDelegate.h */,
-				650B70DC25E100D60071CECD /* SceneDelegate.m */,
-				650B70DE25E100D60071CECD /* ViewController.h */,
-				650B70DF25E100D60071CECD /* ViewController.m */,
 				650B70E125E100D60071CECD /* Main.storyboard */,
 				650B70E425E100D60071CECD /* Assets.xcassets */,
 				650B70E625E100D60071CECD /* LaunchScreen.storyboard */,
@@ -76,25 +230,194 @@
 			path = DCHFyberOffersSDKDemo;
 			sourceTree = "<group>";
 		};
+		650B70F825E101F80071CECD /* DCHFyberOffersSDK */ = {
+			isa = PBXGroup;
+			children = (
+				650B712125E1064B0071CECD /* Classes */,
+				650B70F925E101F80071CECD /* DCHFyberOffersSDK.h */,
+				650B70FA25E101F80071CECD /* Info.plist */,
+			);
+			path = DCHFyberOffersSDK;
+			sourceTree = "<group>";
+		};
+		650B710525E101F80071CECD /* DCHFyberOffersSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				650B710625E101F80071CECD /* DCHFyberOffersSDKTests.m */,
+				6527499B25E24866005A2F1D /* DCHFyberOffersSDKFunctionalTests.m */,
+				650B710825E101F80071CECD /* Info.plist */,
+			);
+			path = DCHFyberOffersSDKTests;
+			sourceTree = "<group>";
+		};
+		650B712125E1064B0071CECD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				650B712225E1064B0071CECD /* FBRFyber.h */,
+				650B712B25E1064B0071CECD /* FBRFyber.m */,
+				650B712425E1064B0071CECD /* FBROffersFactory.h */,
+				650B712D25E1064B0071CECD /* FBROffersFactory.m */,
+				650B712A25E1064B0071CECD /* FBROfferItem.h */,
+				650B712325E1064B0071CECD /* FBROfferItem.m */,
+				650B712525E1064B0071CECD /* NSString+SHA.h */,
+				650B712C25E1064B0071CECD /* NSString+SHA.m */,
+				650B712E25E1064B0071CECD /* FBRLinkGenerator.h */,
+				650B712725E1064B0071CECD /* FBRLinkGenerator.m */,
+				650B712F25E1064B0071CECD /* FBRGenericBlocks.h */,
+				650B712925E1064B0071CECD /* FBROffersRequest.h */,
+				650B713025E1064B0071CECD /* FBROffersRequest.m */,
+				65A45E2425E1396700BD5228 /* FBRFyberParametersKeys.h */,
+				65A45E2525E1396700BD5228 /* FBRFyberParametersKeys.m */,
+				65A45E7D25E1409500BD5228 /* FBRParams.h */,
+				65A45E7E25E1409500BD5228 /* FBRParams.m */,
+				65A45EC025E145AA00BD5228 /* OfferType.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		650B715225E10A5B0071CECD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				650B715325E10A5B0071CECD /* FBRResultsViewController */,
+				650B715625E10A5B0071CECD /* FBRViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		650B715325E10A5B0071CECD /* FBRResultsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				650B715425E10A5B0071CECD /* FBRResultsViewController.h */,
+				650B715525E10A5B0071CECD /* FBRResultsViewController.m */,
+			);
+			path = FBRResultsViewController;
+			sourceTree = "<group>";
+		};
+		650B715625E10A5B0071CECD /* FBRViewController */ = {
+			isa = PBXGroup;
+			children = (
+				650B715725E10A5B0071CECD /* FBRViewController.h */,
+				650B715825E10A5B0071CECD /* FBRViewController.m */,
+			);
+			path = FBRViewController;
+			sourceTree = "<group>";
+		};
+		650B715D25E10A9B0071CECD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				650B715E25E10A9B0071CECD /* FBROfferTableViewCell.h */,
+				650B715F25E10A9B0071CECD /* FBROfferTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		65A45ED925E1495400BD5228 /* FlowHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				65A45EDA25E1496100BD5228 /* MainFlowHandler.h */,
+				65A45EDB25E1496100BD5228 /* MainFlowHandler.m */,
+			);
+			path = FlowHandlers;
+			sourceTree = "<group>";
+		};
+		65A45EE025E14B7400BD5228 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				65A45EED25E14BA100BD5228 /* UIViewController+Creation.h */,
+				65A45EEE25E14BA100BD5228 /* UIViewController+Creation.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		8BABFB74FB5546423191FA8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22384A465917F3D63D7A81F0 /* Pods_DCHFyberOffersSDKDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		650B70F225E101F80071CECD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65A45E2625E1396700BD5228 /* FBRFyberParametersKeys.h in Headers */,
+				650B713325E1064B0071CECD /* FBROffersFactory.h in Headers */,
+				650B713925E1064B0071CECD /* FBROfferItem.h in Headers */,
+				650B713125E1064B0071CECD /* FBRFyber.h in Headers */,
+				65A45E7F25E1409500BD5228 /* FBRParams.h in Headers */,
+				650B710925E101F80071CECD /* DCHFyberOffersSDK.h in Headers */,
+				650B713E25E1064B0071CECD /* FBRGenericBlocks.h in Headers */,
+				650B713825E1064B0071CECD /* FBROffersRequest.h in Headers */,
+				650B713425E1064B0071CECD /* NSString+SHA.h in Headers */,
+				65A45EC225E145AA00BD5228 /* OfferType.h in Headers */,
+				650B713D25E1064B0071CECD /* FBRLinkGenerator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		650B70D425E100D50071CECD /* DCHFyberOffersSDKDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 650B70EE25E100D60071CECD /* Build configuration list for PBXNativeTarget "DCHFyberOffersSDKDemo" */;
 			buildPhases = (
+				CEB31ABD0FFCEE2F11792B03 /* [CP] Check Pods Manifest.lock */,
 				650B70D125E100D50071CECD /* Sources */,
 				650B70D225E100D50071CECD /* Frameworks */,
 				650B70D325E100D50071CECD /* Resources */,
+				650B711125E101F80071CECD /* Embed Frameworks */,
+				C1975B1BB88CE65794102342 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				650B710B25E101F80071CECD /* PBXTargetDependency */,
 			);
 			name = DCHFyberOffersSDKDemo;
 			productName = DCHFyberOffersSDKDemo;
 			productReference = 650B70D525E100D60071CECD /* DCHFyberOffersSDKDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		650B70F625E101F80071CECD /* DCHFyberOffersSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 650B710E25E101F80071CECD /* Build configuration list for PBXNativeTarget "DCHFyberOffersSDK" */;
+			buildPhases = (
+				650B70F225E101F80071CECD /* Headers */,
+				650B70F325E101F80071CECD /* Sources */,
+				650B70F425E101F80071CECD /* Frameworks */,
+				650B70F525E101F80071CECD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DCHFyberOffersSDK;
+			productName = DCHFyberOffersSDK;
+			productReference = 650B70F725E101F80071CECD /* DCHFyberOffersSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		650B70FE25E101F80071CECD /* DCHFyberOffersSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 650B711225E101F80071CECD /* Build configuration list for PBXNativeTarget "DCHFyberOffersSDKTests" */;
+			buildPhases = (
+				650B70FB25E101F80071CECD /* Sources */,
+				650B70FC25E101F80071CECD /* Frameworks */,
+				650B70FD25E101F80071CECD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				650B710225E101F80071CECD /* PBXTargetDependency */,
+				650B710425E101F80071CECD /* PBXTargetDependency */,
+			);
+			name = DCHFyberOffersSDKTests;
+			productName = DCHFyberOffersSDKTests;
+			productReference = 650B70FF25E101F80071CECD /* DCHFyberOffersSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -105,6 +428,17 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					650B70D425E100D50071CECD = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					650B70F625E101F80071CECD = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					650B70FE25E101F80071CECD = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 650B70D425E100D50071CECD;
+					};
+					650B71C125E113C40071CECD = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -123,6 +457,9 @@
 			projectRoot = "";
 			targets = (
 				650B70D425E100D50071CECD /* DCHFyberOffersSDKDemo */,
+				650B70F625E101F80071CECD /* DCHFyberOffersSDK */,
+				650B70FE25E101F80071CECD /* DCHFyberOffersSDKTests */,
+				650B71C125E113C40071CECD /* Framework */,
 			);
 		};
 /* End PBXProject section */
@@ -138,21 +475,144 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		650B70F525E101F80071CECD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		650B70FD25E101F80071CECD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		650B71CA25E1148A0071CECD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FRAMEWORK_NAME=\"DCHFyberOffersSDK\"\n\necho \"check1\"\n\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework\"\n\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework\"\n\nDEVICE_BCSYMBOLMAP_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos\"\n\nDEVICE_DSYM_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework.dSYM\"\nSIMULATOR_DSYM_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework.dSYM\"\n\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\"\n\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${FRAMEWORK_NAME}.framework\"\n\nOUTPUT_DIR_NAME=\"DCHFyberOffersSDK-Aggregated\"\n\nOUTPUT_DIR=\"./${OUTPUT_DIR_NAME}\"\n\nrm -rf \"${OUTPUT_DIR_NAME}\"\n\necho \"check2\"\n\nxcodebuild clean build -project ${PROJECT_NAME}.xcodeproj -scheme ${FRAMEWORK_NAME}\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -scheme ${FRAMEWORK_NAME} -sdk iphonesimulator -configuration ${CONFIGURATION} CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator EXCLUDED_ARCHS=\"arm64\"\n\necho \"check3\"\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -scheme ${FRAMEWORK_NAME} -sdk iphoneos -configuration ${CONFIGURATION} CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos\n\necho \"check4\"\n\nrm -rf \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${FRAMEWORK}\"\n\nrm -rf \"$OUTPUT_DIR\"\nmkdir -p \"$OUTPUT_DIR\"\n\ncp -r \"${DEVICE_LIBRARY_PATH}/.\" \"${FRAMEWORK}\"\n\necho \"check5\"\n\nlipo \"${SIMULATOR_LIBRARY_PATH}/${FRAMEWORK_NAME}\" \"${DEVICE_LIBRARY_PATH}/${FRAMEWORK_NAME}\" -create -output \"${FRAMEWORK}/${FRAMEWORK_NAME}\" | echo\ncp -r \"${FRAMEWORK}\" \"$OUTPUT_DIR\"\n\necho \"check6\"\n\ncp -r \"${DEVICE_DSYM_PATH}\" \"$OUTPUT_DIR\"\nlipo -create -output \"$OUTPUT_DIR/${FRAMEWORK_NAME}.framework.dSYM/Contents/Resources/DWARF/${FRAMEWORK_NAME}\" \\\n\"${DEVICE_DSYM_PATH}/Contents/Resources/DWARF/${FRAMEWORK_NAME}\" \\\n\"${SIMULATOR_DSYM_PATH}/Contents/Resources/DWARF/${FRAMEWORK_NAME}\" || exit 1\n\necho \"check7\"\n\nUUIDs=$(dwarfdump --uuid \"${DEVICE_DSYM_PATH}\" | cut -d ' ' -f2)\nfor file in `find \"${DEVICE_BCSYMBOLMAP_PATH}\" -name \"*.bcsymbolmap\" -type f`; do\nfileName=$(basename \"$file\" \".bcsymbolmap\")\nfor UUID in $UUIDs; do\nif [[ \"$UUID\" = \"$fileName\" ]]; then\ncp -R \"$file\" \"$OUTPUT_DIR\"\ndsymutil --symbol-map \"$OUTPUT_DIR\"/\"$fileName\".bcsymbolmap \"$OUTPUT_DIR/${FRAMEWORK_NAME}.framework.dSYM\"\nfi\n\necho \"check8\"\n\ndone\ndone\n\nopen \"${OUTPUT_DIR_NAME}\"\n";
+		};
+		C1975B1BB88CE65794102342 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DCHFyberOffersSDKDemo/Pods-DCHFyberOffersSDKDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DCHFyberOffersSDKDemo/Pods-DCHFyberOffersSDKDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DCHFyberOffersSDKDemo/Pods-DCHFyberOffersSDKDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEB31ABD0FFCEE2F11792B03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DCHFyberOffersSDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		650B70D125E100D50071CECD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				650B70E025E100D60071CECD /* ViewController.m in Sources */,
+				650B715925E10A5B0071CECD /* FBRResultsViewController.m in Sources */,
+				65A45EDC25E1496100BD5228 /* MainFlowHandler.m in Sources */,
+				650B715A25E10A5B0071CECD /* FBRViewController.m in Sources */,
+				65A45EEF25E14BA100BD5228 /* UIViewController+Creation.m in Sources */,
 				650B70DA25E100D60071CECD /* AppDelegate.m in Sources */,
 				650B70EB25E100D60071CECD /* main.m in Sources */,
-				650B70DD25E100D60071CECD /* SceneDelegate.m in Sources */,
+				650B716025E10A9B0071CECD /* FBROfferTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		650B70F325E101F80071CECD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				650B713C25E1064B0071CECD /* FBROffersFactory.m in Sources */,
+				650B713B25E1064B0071CECD /* NSString+SHA.m in Sources */,
+				65A45E2725E1396700BD5228 /* FBRFyberParametersKeys.m in Sources */,
+				650B713A25E1064B0071CECD /* FBRFyber.m in Sources */,
+				650B713625E1064B0071CECD /* FBRLinkGenerator.m in Sources */,
+				65A45E8025E1409500BD5228 /* FBRParams.m in Sources */,
+				650B713225E1064B0071CECD /* FBROfferItem.m in Sources */,
+				650B713F25E1064B0071CECD /* FBROffersRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		650B70FB25E101F80071CECD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				650B710725E101F80071CECD /* DCHFyberOffersSDKTests.m in Sources */,
+				6527499C25E24866005A2F1D /* DCHFyberOffersSDKFunctionalTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		650B710225E101F80071CECD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 650B70F625E101F80071CECD /* DCHFyberOffersSDK */;
+			targetProxy = 650B710125E101F80071CECD /* PBXContainerItemProxy */;
+		};
+		650B710425E101F80071CECD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 650B70D425E100D50071CECD /* DCHFyberOffersSDKDemo */;
+			targetProxy = 650B710325E101F80071CECD /* PBXContainerItemProxy */;
+		};
+		650B710B25E101F80071CECD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 650B70F625E101F80071CECD /* DCHFyberOffersSDK */;
+			targetProxy = 650B710A25E101F80071CECD /* PBXContainerItemProxy */;
+		};
+		650B71C925E114280071CECD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 650B70F625E101F80071CECD /* DCHFyberOffersSDK */;
+			targetProxy = 650B71C825E114280071CECD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		650B70E125E100D60071CECD /* Main.storyboard */ = {
@@ -225,7 +685,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -278,7 +738,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,35 +748,148 @@
 		};
 		650B70EF25E100D60071CECD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1F811DC85F408012F56611D /* Pods-DCHFyberOffersSDKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PRKGP8V6Z3;
 				INFOPLIST_FILE = DCHFyberOffersSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dch.DCHFyberOffersSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DCHFyberOffersSDKDemo/ViewControllers/SwiftIntegration/DCHFyberOffersSDKDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		650B70F025E100D60071CECD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A420C52A870781F4C347ABBE /* Pods-DCHFyberOffersSDKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PRKGP8V6Z3;
 				INFOPLIST_FILE = DCHFyberOffersSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dch.DCHFyberOffersSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DCHFyberOffersSDKDemo/ViewControllers/SwiftIntegration/DCHFyberOffersSDKDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		650B710F25E101F80071CECD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DCHFyberOffersSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dch.DCHFyberOffersSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		650B711025E101F80071CECD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DCHFyberOffersSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dch.DCHFyberOffersSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		650B711325E101F80071CECD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DCHFyberOffersSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dch.DCHFyberOffersSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DCHFyberOffersSDKDemo.app/DCHFyberOffersSDKDemo";
+			};
+			name = Debug;
+		};
+		650B711425E101F80071CECD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DCHFyberOffersSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dch.DCHFyberOffersSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DCHFyberOffersSDKDemo.app/DCHFyberOffersSDKDemo";
+			};
+			name = Release;
+		};
+		650B71C325E113C40071CECD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		650B71C425E113C40071CECD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -337,6 +910,33 @@
 			buildConfigurations = (
 				650B70EF25E100D60071CECD /* Debug */,
 				650B70F025E100D60071CECD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		650B710E25E101F80071CECD /* Build configuration list for PBXNativeTarget "DCHFyberOffersSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				650B710F25E101F80071CECD /* Debug */,
+				650B711025E101F80071CECD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		650B711225E101F80071CECD /* Build configuration list for PBXNativeTarget "DCHFyberOffersSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				650B711325E101F80071CECD /* Debug */,
+				650B711425E101F80071CECD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		650B71C225E113C40071CECD /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				650B71C325E113C40071CECD /* Debug */,
+				650B71C425E113C40071CECD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

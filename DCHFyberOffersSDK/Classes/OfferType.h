@@ -9,8 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSUInteger, FYBLoggingLevel) {
-    
+typedef NS_ENUM(NSUInteger, OfferType) {
+    OfferTypeFree,
+    OfferTypeSale
 };
 
 NS_ASSUME_NONNULL_END

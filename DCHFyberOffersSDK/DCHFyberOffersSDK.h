@@ -13,6 +13,8 @@ FOUNDATION_EXPORT double DCHFyberOffersSDKVersionNumber;
 //! Project version string for DCHFyberOffersSDK.
 FOUNDATION_EXPORT const unsigned char DCHFyberOffersSDKVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <DCHFyberOffersSDK/PublicHeader.h>
-
-
+#import <DCHFyberOffersSDK/FBRFyber.h>
+#import <DCHFyberOffersSDK/FBROfferItem.h>
+#import <DCHFyberOffersSDK/FBRGenericBlocks.h>
+#import <DCHFyberOffersSDK/OfferType.h>
+#import <DCHFyberOffersSDK/FBRParams.h>
