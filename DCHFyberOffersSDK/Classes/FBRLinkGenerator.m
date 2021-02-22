@@ -9,7 +9,7 @@
 #import "FBRLinkGenerator.h"
 #import "NSString+SHA.h"
 
-static NSString * const kFyberBaseURL = @"http://api.fyber.com/feed/v1/";
+static NSString * const kFyberBaseURL = @"https://api.fyber.com/feed/v1/";
 
 @implementation FBRLinkGenerator
 
